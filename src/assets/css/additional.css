@@ -1,0 +1,176 @@
+/* Datepicker Start */
+
+#ui-datepicker-div {
+  font-family: inherit;
+}
+
+.ui-widget-header {
+  border: 1px solid transparent;
+  background: #dfeffc;
+  color: var(--viriyah-primary);
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: auto;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 2px;
+  color: var(--viriyah-primary);
+  font-family: inherit;
+  font-weight: 600;
+  /* background: var(--white-trans); */
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
+  color: var(--viriyah-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  color: white;
+  background: var(--viriyah-primary);
+  transform: scale(1.1);
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+  border: 1px solid transparent;
+  background: #d0e5f5;
+  font-weight: 600;
+  color: #2e6e9e;
+  transform: scale(1.1);
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.describe {
+  min-height: 120px;
+}
+
+.quotation-img {
+  background: url(../img/bg_krajang.png) repeat-x;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.quotation-topic {
+  font-weight: 800;
+  overflow: hidden;
+  border-bottom: 3px solid var(--yellow-primary);
+  margin-bottom: 10px;
+}
+
+.quotation-subtopic {
+  background-color: var(--viriyah-light-sky);
+  margin-top: 15px;
+  padding-left: 5px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Datepicker End */
+
+/* MaterialTable Start */
+
+.MuiTypography-h6 {
+  font-family: "db_sathorn_regular" !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
+
+.required {
+  color: red;
+}
+
+.MuiToolbar-regular {
+  min-height: 0px !important;
+}
+
+/* MaterialTable End */
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  z-index: 10;
+}
+
+/* react-select validation Start */
+
+.select-is-valid {
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.select-is-valid .css-yk16xz-control {
+  border-color: #28a745;
+}
+
+.select-is-valid .css-yk16xz-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.select-is-valid .css-1pahdxg-control {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.select-is-valid .css-1pahdxg-control:hover {
+  border-color: #28a745;
+}
+
+.select-is-invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.select-is-invalid .css-yk16xz-control {
+  border-color: #dc3545;
+}
+
+.select-is-invalid .css-yk16xz-control:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.select-is-invalid .css-1pahdxg-control {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.select-is-invalid .css-1pahdxg-control:hover {
+  border-color: #dc3545;
+}
+
+.react-datepicker__current-month.react-datepicker__current-month--hasYearDropdown.react-datepicker__current-month--hasMonthDropdown {
+  display: none;
+}
+
+/* React-select Validation End */

@@ -1,0 +1,26 @@
+[
+  {
+    "label": "สอบถามเบี้ย",
+    "pathname": "/",
+    "key": "create-quatation",
+    "icon": "description"
+  },
+  {
+    "label": "รายการใบเสนอราคา",
+    "pathname": "/quatations",
+    "key": "quatations",
+    "icon": "format_list_numbered"
+  },
+  {
+    "label": "รายการใบคำขอ",
+    "pathname": "/policies",
+    "key": "policies",
+    "icon": "list"
+  },
+  {
+    "label": "เวอร์ชั่น",
+    "pathname": "/versions",
+    "key": "versions",
+    "icon": "label_important"
+  }
+]

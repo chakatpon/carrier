@@ -1,0 +1,22 @@
+image: docker:dind
+
+stages:
+  - pull
+  - build
+  - lint
+  - push
+  - deploy
+  - cleanup
+
+services:
+  - docker:dind
+
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+build:
+  stage: build
+  script:
+    - docker container stop carrier || true && docker container rm carrier || true
+    - docker build --cache-from $CI_REGISTRY_IMAGE:latest --tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA --tag $CI_REGISTRY_IMAGE:latest .
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    - docker run -d -p 3000:80 --name carrier $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA

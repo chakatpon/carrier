@@ -1,0 +1,69 @@
+{
+  "HA_PROXY_PATH": "/customers",
+  "CHECK_BY_LASER": {
+    "METHOD": "POST",
+    "URL": "https://vgateway.viriyah.co.th/dopa_checkcard/CheckCardByLaser",
+    "END_POINT": "/api/check-by-laser"
+  },
+  "SMS": {
+    "METHOD": "POST",
+    "URL": "https://vgateway.viriyah.co.th/sms/AddQueMTimer",
+    "END_POINT": "/api/sms",
+    "AUTH_TYPE": "basic-auth",
+    "USERNAME": "ecom360",
+    "PASSWORD": "EC3om60"
+  },
+  "GET_CUSTOMERS_BY_ID": {
+    "METHOD": "POST",
+    "URL": "https://vgateway.viriyah.co.th/cdata/GetCustomersByIDNumber",
+    "END_POINT": "/api/get-customers-by-id"
+  },
+  "GET_PREMIUM": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/Premium"
+  },
+  "GET_PROPERTY": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/Property"
+  },
+  "GET_PACKAGE": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/Package"
+  },
+  "GET_COVERAGE": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/Coverage"
+  },
+  "GET_DISCOUNT": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/Discount"
+  },
+  "GET_COUNTRY": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/Country"
+  },
+  "GET_PROVINCE": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/Province"
+  },
+  "GET_CARTYPE": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/CarType"
+  },
+  "GET_USECAR": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/UseCar"
+  },
+  "GET_CARNAME": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/CarName"
+  },
+  "GET_PRENAME": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/Prename"
+  },
+  "GET_MOTORINFO": {
+    "METHOD": "GET",
+    "URL": "https://webagency-test.viriyah.co.th/CarrierAPI/MotorInfo"
+  }
+}
